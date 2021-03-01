@@ -91,6 +91,7 @@ function toggleRead(evt) {
 	status ? myLibrary[index].read = false :
 			myLibrary[index].read = true;
 
+	saveLibraryToLocal()
 	renderBooks();
 }
 
